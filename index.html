@@ -1,11 +1,611 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Welcome to ROCling 2025</title>
+  <meta charset="utf-8">
+  <title>ROCLING 2025</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon_io/favicon-32x32.png" rel="icon">
+  <link href="img/favicon_io/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css?1" rel="stylesheet">
+
+  <!-- Google Search Console -->
+  <meta name="google-site-verification" content="-fD59RiHc4OQb37XpVtmZkcUeguaxVbKsDHtu6wsbQo" />
+  
+  <!-- =======================================================
+    Theme Name: TheEvent
+    Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
 </head>
+
 <body>
-  <h1>Hello, world!</h1>
-  <p>This is the ROCling 2025 GitHub Pages site.</p>
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header" tpl="header">
+    <data hidden>
+    { "logoText": "ROCLING 2025" }
+  </data>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro" tpl="intro"></section>
+
+  <main id="main">
+
+    <!--==========================
+      About Section
+    ============================-->
+    <section id="about" tpl="about"></section>
+
+    <!--==========================
+      Important Dates Section
+    ============================-->
+    <section id="dates" tpl="dates"  class="wow fadeInUp"></section>
+
+
+    <!--==========================
+      Call For Paper Section
+    ============================-->
+    <section id="call" tpl="call"  class="section-with-bg fadeInUp"></section>
+
+
+    <!--==========================
+      Schedule Section
+    ============================-->
+    <section id="schedule" tpl="schedule" class="wow fadeInUp">
+	    <data hidden>
+<!-- {
+  "days": [
+    {
+      "title": "Day 1 (Monday), November 4, 2025",
+      "periods": [
+        {
+          "time": "08:30 - 09:00",
+          "sessions": [
+            {
+              "title": "Registration",
+              "location": "Location: 3rd floor of HSSB"
+            }
+          ]
+        },
+        {
+          "time": "09:00 - 09:20",
+          "sessions": [
+            {
+              "title": "Opening",
+              "location": "Location: 1st Conference Room"
+            }
+          ]
+        },
+        {
+          "time": "09:20 - 10:20",
+          "sessions": [
+            {
+              "title": "Oral Session I (Thesis Award Winners' Presentation)",
+              "location": "Location: 1st Conference Room",
+              "chair": "Professor Hung-Yu Kao",
+              "talks": [
+                {
+                  "title": "An Investigation into the Key Feature Extraction and Transferability of Self-Supervised Models in Speech Processing",
+                  "author": "Jai-Hao Hsu (Advisor: Chung-Hsien Wu)"
+                },
+                {
+                  "title": "Enhanced Factual Consistency of Language Generation via Optimization-based Inference with Fact Retrieval",
+                  "author": "Hsin-Hung Huang (Advisor: Yun-Nung Chen)"
+                },
+                {
+                  "title": "Large Language Models as Multiple-Choice Readers: Multichoice Prompting with Self-consistency and Chain-of-thought",
+                  "author": "Cheng-Han Chiang (Advisor: Lun-Wei Ku)"
+                }
+              ]
+            },
+            {
+              "title": "Keynote I",
+              "location": "Location: 1st Conference Room",
+              "speaker": {
+                "name": "Heng Ji",
+                "link": "https://blender.cs.illinois.edu/hengji.html",
+                "affiliation": "University of Illinois Urbana-Champaign"
+              },
+              "chair": "Professor Lun-Wei Ku",
+              "image": "img/keynote/ji.jpeg",
+              "subject": "Making Large Language Model’s Knowledge More Accurate, Organized, Up-to-date and Fair"
+            }
+          ]
+        },
+        {
+          "time": "10:20 - 10:40",
+          "sessions": [
+            {
+              "title": "Coffee Break",
+              "location": "Location: 1st Conference Room"
+            }
+          ]
+        },
+        {
+          "time": "10:40 - 12:00",
+          "sessions": [
+            {
+              "title": "Oral Session I (Thesis Award Winners' Presentation)",
+              "location": "Location: 1st Conference Room",
+              "chair": "Professor Hung-Yu Kao",
+              "talks": [
+                {
+                  "title": "An Investigation into the Key Feature Extraction and Transferability of Self-Supervised Models in Speech Processing",
+                  "author": "Jai-Hao Hsu (Advisor: Chung-Hsien Wu)"
+                },
+                {
+                  "title": "Enhanced Factual Consistency of Language Generation via Optimization-based Inference with Fact Retrieval",
+                  "author": "Hsin-Hung Huang (Advisor: Yun-Nung Chen)"
+                },
+                {
+                  "title": "Large Language Models as Multiple-Choice Readers: Multichoice Prompting with Self-consistency and Chain-of-thought",
+                  "author": "Cheng-Han Chiang (Advisor: Lun-Wei Ku)"
+                }
+              ]
+            },
+            {
+              "title": "Oral Session I (Thesis Award Winners' Presentation)",
+              "location": "Location: 1st Conference Room",
+              "chair": "Professor Hung-Yu Kao",
+              "talks": [
+                {
+                  "title": "An Investigation into the Key Feature Extraction and Transferability of Self-Supervised Models in Speech Processing",
+                  "author": "Jai-Hao Hsu (Advisor: Chung-Hsien Wu)"
+                },
+                {
+                  "title": "Enhanced Factual Consistency of Language Generation via Optimization-based Inference with Fact Retrieval",
+                  "author": "Hsin-Hung Huang (Advisor: Yun-Nung Chen)"
+                },
+                {
+                  "title": "Large Language Models as Multiple-Choice Readers: Multichoice Prompting with Self-consistency and Chain-of-thought",
+                  "author": "Cheng-Han Chiang (Advisor: Lun-Wei Ku)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "time": "12:00 - 13:30",
+          "sessions": [
+            {
+              "title": "Lunch Break"
+            }
+          ]
+        },
+        {
+          "time": "13:30 - 14:50",
+          "sessions": [
+            {
+              "title": "Oral Session II (Dialogue, Summarization, Generation)",
+              "location": "Location: 1st Conference Room",
+              "chair": "Professor Shou-De Lin",
+              "talks": [
+                {
+                  "title": "Using Interlocutor Representation to Generate Dialogue Response for a Specific Person",
+                  "author": "Yen-Ju Lu, Lun-Wei Ku"
+                },
+                {
+                  "title": "Unsupervised Topic Segmentation and Labeling in Meetings",
+                  "author": "Hui-Min Chuang, Berlin Chen"
+                },
+                {
+                  "title": "Ensemble Latent Variables for Neural Text Generation",
+                  "author": "Cheng-Tao Chung, Hung-Yi Lee"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "time": "14:50 - 15:10",
+          "sessions": [
+            {
+              "title": "Coffee Break"
+            }
+          ]
+        },
+        {
+          "time": "15:10 - 16:10",
+          "sessions": [
+            {
+              "title": "Oral Session III (Multimodal NLP)",
+              "location": "Location: 1st Conference Room",
+              "chair": "Professor Kuan-Yu Chen",
+              "talks": [
+                {
+                  "title": "UniDiff: Unified Diffusion Models for Cross-Domain Cross-Modality Generation",
+                  "author": "Hung-Yu Tseng, Hwann-Tzong Chen, and Kuan-Yu Chen"
+                },
+                {
+                  "title": "Layout-Aware Post-OCR Correction Model",
+                  "author": "Yu-Hsiang Hu, Hsin-Hsi Chen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "time": "16:30 - 17:30",
+          "sessions": [
+            {
+              "title": "Poster Session",
+              "location": "Location: 3rd floor of HSSB"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Day 2 (Tuesday), November 5, 2025",
+      "periods": [
+        {
+          "time": "09:00 - 10:00",
+          "sessions": [
+            {
+              "title": "Keynote II",
+              "location": "Location: 1st Conference Room",
+              "speaker": {
+                "name": "Eduard Hovy",
+                "link": "https://www.cs.cmu.edu/~hovy/",
+                "affiliation": "Carnegie Mellon University"
+              },
+              "chair": "Professor Chia-Hui Chang",
+              "image": "img/keynote/hovy.png",
+	      "subject": "test subject"
+            }
+          ]
+        },
+        {
+          "time": "10:00 - 10:20",
+          "sessions": [
+            {
+              "title": "Coffee Break"
+            }
+          ]
+        },
+        {
+          "time": "10:20 - 11:40",
+          "sessions": [
+            {
+              "title": "Oral Session IV (Sentiment, Stance, Hate Speech)",
+              "location": "Location: 1st Conference Room",
+              "chair": "Professor Lun-Wei Ku",
+              "talks": [
+                {
+                  "title": "KOLD: Korean Offensive Language Dataset",
+                  "author": "Yunji Kim, Hee-Jeong Lee, and Haejun Lee"
+                },
+                {
+                  "title": "A Novel Prompt Engineering Approach for Implicit Sentiment Analysis",
+                  "author": "Ya-Fang Yang, Tzu-Ying Wu, and Hung-Yu Kao"
+                },
+                {
+                  "title": "Cross-target Stance Detection by Modeling Topics and Discourse of Stance Targets",
+                  "author": "Hsiang-Lun Chen, Lun-Wei Ku"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "time": "11:40 - 13:00",
+          "sessions": [
+            {
+              "title": "Lunch Break"
+            }
+          ]
+        },
+        {
+          "time": "13:00 - 14:00",
+          "sessions": [
+            {
+              "title": "Panel Discussion",
+              "location": "Location: 1st Conference Room"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+} -->
+
+	    </data>
+    </section>
+
+    
+    <!--==========================
+      Registration Section
+    ============================-->
+    <section id="buy-registrations" tpl="registrations" class="section-with-bg fadeInUp"></section>
+
+    <!--==========================
+      Organization Section
+    ============================-->
+    <section id="organization" tpl="organizations" class="wow fadeInUp">
+	    <data hidden>
+{
+  "sections": [
+    {
+      "title": "Conference Chairs",
+      "members": [
+        {
+          "name": "Yun-Nung Chen",
+          <!-- "link": "https://www.csie.ntu.edu.tw/~yvchen/", -->
+          "affiliation": "National Taiwan University",
+          "email": "yvchen@csie.ntu.edu.tw",
+          "img": "img/organization/chen-yun-nung.jpg"
+        },
+        {
+          "name": "Hung-Yi Lee",
+          <!-- "link": "https://speech.ee.ntu.edu.tw/~hylee/index.php", -->
+          "affiliation": "National Taiwan University",
+          "email": "hungyilee@ntu.edu.tw",
+          "img": "img/organization/lee-hung-yi.jpg",
+          "imgStyle": "height: 100%;"
+        },
+        {
+          "name": "Pu-Jen Cheng",
+          <!-- "link": "https://www.csie.ntu.edu.tw/~pjcheng/", -->
+          "affiliation": "National Taiwan University",
+          "email": "pjcheng@csie.ntu.edu.tw",
+          "img": "img/organization/cheng-pu-jen.jpg",
+          "imgStyle": "height: 130%;"
+        }
+      ]
+    },
+    {
+      "title": "Program Chairs",
+      "members": [
+        {
+          "name": "Kai-Wei Chang",
+          <!-- "link": "https://www.facebook.com/c36pf6ba/?locale=zh_TW", -->
+          "affiliation": "Postdoctoral Fellow, MIT CSAIL",
+          "email": "kwchang@mit.edu",
+          "img": "img/organization/kaiwei.jpg",
+          "imgStyle": "height: 110%;"
+        },
+        {
+          "name": "Ke-Han Lu",
+          <!-- "link": "https://kehan.lu/", -->
+          "affiliation": "National Taiwan University",
+          "email": "kehanluu@gmail.com",
+          "img": "img/organization/kehanluu.jpg"
+          <!-- "imgStyle": "height: 120%;" -->
+        },
+        {
+          "name": "Chih-Kai Yang",
+          <!-- "link": "TODO", -->
+          "affiliation": "National Taiwan University",
+          "email": "kevinyang1124@gmail.com",
+          "img": "img/organization/chihkaiyang.jpg"
+        },
+        {
+          "name": "譚智睿",
+          <!-- "link": "TODO", -->
+          "affiliation": "National Yang Ming Chiao Tung University",
+          "email": "ray.eed08g@nctu.edu.tw",
+          "img": "img/organization/unknown-avatar.jpg"
+        },
+        {
+          "name": "Wen-Yu Chang",
+          <!-- "link": "https://www.pro360.com.tw/service/184845", -->
+          "affiliation": "National Taiwan University",
+          "email": "f10946031@csie.ntu.edu.tw",
+          "img": "img/organization/Wen-Yu-Chang.jpeg"
+        },
+        {
+          "name": "Chung-Che Wang",
+          <!-- "link": "https://www.linkedin.com/in/%E7%8E%8B%E5%B4%87%E5%96%86/?originalSubdomain=tw", -->
+          "affiliation": "Postdoctoral Researcher (until July 2025)",
+          "email": "geniusturtle6174@gmail.com",
+          "img": "img/organization/Chung-Che-Wang.jpg"
+        }
+      ]
+    },
+    {
+      "title": "Tutorial Chair",
+      "members": [
+        {
+          "name": "Lung-Hao Lee",
+          <!-- "link": "https://lunghao.weebly.com/", -->
+          "affiliation": "National Yang Ming Chiao Tung University",
+          "email": "lhlee@nycu.edu.tw",
+          "img": "img/organization/lee-lung-hao.jpg"
+        }
+      ]
+    },
+    <!-- {
+      "title": "Workshop Chair",
+      "members": [
+        {
+          "name": "Siaw-Fong Chung",
+          "affiliation": "National Chengchi University",
+          "email": "sfchung@nccu.edu.tw",
+          "img": "img/organization/sfchung.jpg"
+        }
+      ]
+    }, -->
+    {
+      "title": "Special Task Chair",
+      "members": [
+        {
+          "name": "Lung-Hao Lee",
+          <!-- "link": "https://lunghao.weebly.com/", -->
+          "affiliation": "National Yang Ming Chiao Tung University",
+          "email": "lhlee@nycu.edu.tw",
+          "img": "img/organization/lee-lung-hao.jpg"
+        },
+        {
+          "name": "Siaw-Fong Chung",
+          "affiliation": "National Chengchi University",
+          "email": "sfchung@nccu.edu.tw",
+          "img": "img/organization/sfchung.jpg"
+        },
+        {
+          "name": "Yuan-Fu Liao",
+          <!-- "link": "https://sites.google.com/nycu.edu.tw/sarc/members/prof-yuan-fu-liao", -->
+          "affiliation": "National Yang Ming Chiao Tung University",
+          "email": "yfliao@nycu.edu.tw",
+          "img": "img/organization/yfliao.jpg",
+          "imgStyle": "height: 110%;"
+        }
+      ]
+    },
+    {
+      "title": "Web Chair",
+      "members": [
+        {
+          "name": "Yik Ming Chin",
+          "affiliation": "National Taiwan University",
+          "email": "r12944055@csie.ntu.edu.tw",
+          "img": "img/organization/YikMing.jpg"
+        },
+        {
+          "name": "Jui-Wei Fu",
+          "affiliation": "National Taiwan University",
+          "email": "r12944071@csie.ntu.edu.tw",
+          "img": "img/organization/wei.jpg"
+        },
+        {
+          "name": "Wei-Tang Hsu",
+          "affiliation": "National Taiwan University",
+          "email": "b11902033@csie.ntu.edu.tw",
+          "img": "img/organization/unknown-avatar.jpg"
+        }
+      ]
+    }
+  ],
+  "organizers": [
+    {
+      "link": "https://www.ntu.edu.tw/",
+      "logo": "img/organization/ntu.jpg",
+      "name": "National Taiwan University"
+    },
+    {
+      "link": "https://csie.ntu.edu.tw/",
+      "logo": "img/organization/csie-ntu.png",
+      "name": "Department of Computer Science and Information Engineering, National Taiwan University"
+    },
+    {
+      "link": "https://web.ee.ntu.edu.tw/",
+      "logo": "img/organization/ee-ntu.png",
+      "name": "Department of Electrical Engineering, National Taiwan University"
+    },
+    {
+      "link": "https://inm.ntu.edu.tw/",
+      "logo": "img/organization/inm-ntu.jpg",
+      "name": "Graduate Institute of Networking and Multimedia, National Taiwan University"
+    },
+    <!-- {
+      "link": "https://www.sinica.edu.tw",
+      "logo": "img/organization/logo-sinica.png",
+      "name": "Academia Sinica"
+    }, -->
+    {
+      "link": "https://www.aclclp.org.tw",
+      "logo": "img/organization/aclclp2.png",
+      "name": "The Association for Computational Linguistics and Chinese Language Processing"
+    },
+    {
+      "link": "https://fintech.ntu.edu.tw/",
+      "logo": "img/organization/fintech-ntu.png",
+      "name": "Fintech, National Taiwan University"
+    },
+    {
+      "link": "https://www.ling.sinica.edu.tw",
+      "logo": "img/organization/logo-ling.png",
+      "name": "Institute of Linguistics, Academia Sinica"
+    },
+    {
+      "link": "https://www.citi.sinica.edu.tw",
+      "logo": "img/organization/logo-citi.png",
+      "name": "Research Center for Information Technology Innovation, Academia Sinica"
+    },
+    {
+      "link": "https://www.iis.sinica.edu.tw",
+      "logo": "img/organization/logo-iis.png",
+      "name": "Institute of Information Science, Academia Sinica"
+    }
+  ]
+}
+
+	    </data>
+    </section>
+
+    <!--==========================
+      Venue Section
+    ============================-->
+    <section id="venue" tpl="venue" class="section-with-bg fadeInUp"></section>
+
+
+    <!--==========================
+      Sponsors Section
+    ============================-->
+    <section id="sponsors" tpl="sponsors" class="wow fadeInUp">
+	    <data hidden>
+<!-- {
+    "sponsors": [
+      { "href": "https://iis.sinica.edu.tw/zh/index.html", "imgSrc": "img/sponsors/logo-iis.png", "alt": "IIS" },
+      { "href": "https://www.citi.sinica.edu.tw", "imgSrc": "img/sponsors/logo-citi.png", "alt": "CITI" },
+      { "href": "https://www.itri.org.tw/", "imgSrc": "img/sponsors/itri-logo.jpg", "alt": "ITRI" },
+      { "href": "https://www.deltaww.com/", "imgSrc": "img/sponsors/Delta-logo.png", "alt": "Delta" },
+      { "href": "https://www.eland.com.tw/", "imgSrc": "img/sponsors/eLAND-logo.png", "alt": "eLAND" },
+      { "href": "https://www.cht.com.tw/home/consumer", "imgSrc": "img/sponsors/chunghwa.jpg", "alt": "Chunghwa Telecom" },
+      { "href": "https://www.cyberon.com.tw/", "imgSrc": "/img/sponsors/cyberon.jpg", "alt": "Cyberon" }
+  ]
+} -->
+	    </data>
+    </section>
+
+  </main>
+
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer"></footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dot/1.1.3/doT.min.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js?29"></script>
+
 </body>
+
 </html>

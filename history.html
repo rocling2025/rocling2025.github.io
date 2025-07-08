@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ROCLING 2023</title>
+    <style>
+        /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      /* -------------------------------------
+ * Set to false if you are not using Chrome
+ * ------------------------------------- */
+/* -------------------------------------
+ * Styles
+ * ------------------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+body {
+  max-width: 1200px;
+  margin: 50px auto 0;
+  padding: 0 5%;
+  font: 16px/1.5 "Source Sans Pro", sans-serif;
+  color: #3f9cca;
+  background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url("https://www-ch.scu.edu.tw/october/storage/app/uploads/public/626/66f/285/62666f285e8a7267875496.jpg");
+  background-size: cover;
+  background-position: center;
+
+  //background: #3f9cca;
+}
+
+h2, #note {
+  margin: 0;
+}
+
+#timeline {
+  margin-top: 300px;
+  padding: 0;
+  border-top: 8px solid #fff;
+  list-style: none;
+  display: flex;
+}
+#timeline li {
+  padding-top: 30px;
+  position: relative;
+  flex: 1;
+  transition: all 0.4s ease-in-out;
+}
+#timeline li:hover {
+  padding-bottom: 80px;
+  flex: 2;
+}
+#timeline li:hover label {
+  opacity: 1;
+  transform: translateY(10px);
+}
+
+#timeline2 {
+  margin-top: 120px;
+  padding: 0;
+  border-top: 8px solid #fff;
+  list-style: none;
+  display: flex;
+}
+#timeline3 {
+  margin-top: 120px;
+  margin-bottom: 50px;
+  padding: 0;
+  border-top: 8px solid #fff;
+  list-style: none;
+  display: flex;
+}
+
+li {
+  padding-top: 30px;
+  position: relative;
+  flex: 1;
+  transition: all 0.4s ease-in-out;
+}
+li:hover {
+  padding-bottom: 80px;
+  flex: 2;
+}
+li:hover label {
+  opacity: 1;
+  transform: translateY(10px);
+}
+
+label {
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 5px 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #3f9cca;
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+  background-color: #ffff;
+  color: #3f9cca;
+  border-radius: 10% 10% 70% 70%;
+}
+label:before, label:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  position: absolute;
+  bottom: 100%;
+  pointer-events: none;
+}
+label:before {
+  border-bottom-color: #3f9cca;
+  border-width: 15px;
+  left: 52%;
+  margin-left: -15px;
+}
+label:after {
+  border-bottom-color: #3f9cca;
+  border-width: 12px;
+  left: 52%;
+  margin-left: -12px;
+}
+label span {
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+}
+
+.title {
+  color: #3f9cca;
+}
+
+.date {
+  width: 100%;
+  padding-bottom: 30px;
+  text-align: center;
+  position: absolute;
+  top: -60px;
+  display: block;
+  color: #000;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  margin-left: -5px;
+  background: #3f9cca;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: -14px;
+  left: 50%;
+}
+
+.content {
+  width: 800px;
+  height: 160px;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  position: fixed;
+  top: 120px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: #3f9cca;
+  transform: perspective(1000px) rotateY(20deg);
+  animation: switching_back 0.8s;
+  color: #fff;
+}
+.content h3, .content p {
+  margin: 0 20px 10px;
+  text-align: justify;
+  opacity: 0;
+}
+.content h3 {
+  margin-top: 20px;
+}
+
+.content h1 {
+  margin: 10px 20px 10px;
+}
+
+.content h2 {
+  margin: 10px 20px 10px;
+}
+
+.radio {
+  display: none;
+}
+
+.radio:checked + label {
+  opacity: 1;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease-in-out 0.25s, transform 0.3s ease-in-out 0.25s;
+}
+.radio:checked ~ .circle {
+  background: #f98262;
+}
+.radio:checked ~ .content {
+  z-index: 999;
+  //transform: perspective(1200px) rotateY(15deg) translate(40px, 25px);
+  animation: switching 1s ease;
+}
+.radio:checked ~ .content h3, .radio:checked ~ .content p {
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out 0.4s;
+}
+
+@keyframes switching {
+  0% {
+    transform: perspective(1200px) rotateY(20deg);
+  }
+  40% {
+    transform: perspective(1200px) rotateY(15deg) translate(100px, 35px);
+  }
+  100% {
+    transform: perspective(1200px) rotateY(15deg) translate(40px, 25px);
+  }
+}
+@keyframes switching_back {
+  0% {
+    transform: perspective(1200px) rotateY(15deg) translate(40px, 25px);
+    z-index: 200;
+  }
+  40% {
+    transform: perspective(1200px) rotateY(15deg) translate(0px, 0px) scale(1.08);
+  }
+  100% {
+    transform: perspective(1200px) rotateY(20deg);
+    z-index: 100;
+  }
+}
+
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+
+<body>
+    <h1 class="title">The Annual Conference on Computational Linguistics and Speech Processing </h1>
+    <!--<p id="note">The conference on Computational Linguistics and Speech Processing (ROCLING) was initiated in 1988 by the Association for Computational Linguistics and Chinese Language Processing (ACLCLP) with the major goal to provide a platform for researchers and professionals from around the world to share their experiences related to natural language processing and speech processing. Following are a list of past ROCLING conferences.</p>-->
+    <ul id='timeline'>
+        <li class='entry'>
+            <input class='radio' id='trigger25' name='trigger' type='radio'>
+            <label for='trigger25'>
+                <span>NSYSU<br>國立中山大學</span>
+            </label>
+            <span class='date'>2013</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 2014</h3>
+                <p></p>
+                <p>National Sun Yat-sen University (國立中山大學)</p>
+                <p>The <b>25<sup>th</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input class='radio' id='trigger26' name='trigger' type='radio'>
+            <label for='trigger26'>
+                <span>NCU<br>國立中央大學</span>
+            </label>
+            <span class='date'>2014</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 2014</h3>
+                <p></p>
+                <p>National Central University (國立中央大學)</p>
+                <p>The <b>26<sup>th</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input class='radio' id='trigger27' name='trigger' type='radio'>
+            <label for='trigger27'>
+                <span>NCTU<br>國立交通大學</span>
+            </label>
+            <span class='date'>2015</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 2015</h3>
+                <p></p>
+                <p>National Chiao Tung University (國立交通大學)</p>
+                <p>The <b>27<sup>th</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input class='radio' id='trigger28' name='trigger' type='radio'>
+            <label for='trigger28'>
+                <span>NCKU<br>國立成功大學</span>
+            </label>
+            <span class='date'>2016</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 2016</h3>
+                <p></p>
+                <h3>National Cheng Kung University (國立成功大學)</h3>
+                <p>The <b>28<sup>th</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input class='radio' id='trigger29' name='trigger' type='radio'>
+            <label for='trigger29'>
+                <span>Sinica<br>中研院</span>
+            </label>
+            <span class='date'>2017</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 2017</h3>
+                <p></p>
+                <h3>Sinica (中央研究院)</h3>
+                <p>The <b>29<sup>th</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input class='radio' id='trigger30' name='trigger' type='radio'>
+            <label for='trigger30'>
+                <span>NTHU<br>國立清華大學</span>
+            </label>
+            <span class='date'>2018</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 2018</h3>
+                <p></p>
+                <h3>National Tsing Hua University (國立清華大學)</h3>
+                <p>The <b>30<sup>th</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input class='radio' id='trigger31' name='trigger' type='radio'>
+            <label for='trigger31'>
+                <span>NTPU<br>國立臺北大學</span>
+            </label>
+            <span class='date'>2019</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 2019</h3>
+                <p></p>
+                <h3>National Taipei University (國立臺北大學)</h3>
+                <p>The <b>31<sup>st</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input class='radio' id='trigger32' name='trigger' type='radio'>
+            <label for='trigger32'>
+                <span>NTUT<br>國立臺北科技大學</span>
+            </label>
+            <span class='date'>2021</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 2021</h3>
+                <p></p>
+                <h3>National Taipei University of Technology (國立臺北科技大學)</h3>
+                <p>The <b>32<sup>nd</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input class='radio' id='trigger33' name='trigger' type='radio'>
+            <label for='trigger33'>
+                <span>NCU<br>國立中央大學</span>
+            </label>
+            <span class='date'>2021</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 2021</h3>
+                <p></p>
+                <h3>National Central University (NCU) (國立中央大學)</h3>
+                <p>The <b>33<sup>rd</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input class='radio' id='trigger34' name='trigger' type='radio'>
+            <label for='trigger34'>
+                <span>TMU<br>臺北醫學大學</span>
+            </label>
+            <span class='date'>2022</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 2022</h3>
+                <p></p>
+                <h3>Taipei Medical University (臺北醫學大學)</h3>
+                <p>The <b>34<sup>th</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input checked='checked' class='radio' id='trigger35' name='trigger' type='radio'>
+            <label for='trigger35'>
+                <span>SCU<br>東吳大學</span>
+            </label>
+            <span class='date'>2023</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h2>ROCLING 2023</h2>
+                <p></p>
+                <h1>Soochow University (東吳大學)</h1>
+                <p>The <b>35<sup>th</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input checked='checked' class='radio' id='trigger36' name='trigger' type='radio'>
+            <label for='trigger36'>
+                <span>Sinica<br>中央研究院</span>
+            </label>
+            <span class='date'>2024</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h2>ROCLING 2024</h2>
+                <p></p>
+                <h1>Academia Sinica (中央研究院)</h1>
+                <p>The <b>36<sup>th</sup></b>conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input checked='checked' class='radio' id='trigger37' name='trigger' type='radio'>
+            <label for='trigger37'>
+                <span>NTU<br>臺灣大學</span>
+            </label>
+            <span class='date'>2025</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h2>ROCLING 2025</h2>
+                <p></p>
+                <h1>National Taiwan University (臺灣大學)</h1>
+                <p>The <b>37<sup>th</sup></b>conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+    </ul>
+
+    <ul id='timeline2'>
+        <li class='entry'>
+            <input class='radio' id='trigger13' name='trigger' type='radio'>
+            <label for='trigger13'>
+                <span>NTU<br>國立臺灣大學</span>
+            </label>
+            <span class='date'>2000</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 2000</h3>
+                <p></p>
+                <h3>National Taiwan University (國立臺灣大學)</h3>
+                <p>The <b>13<sup>th</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input class='radio' id='trigger14' name='trigger' type='radio'>
+            <label for='trigger14'>
+                <span>NCKU<br>國立成功大學</span>
+            </label>
+            <span class='date'>2001</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 2001</h3>
+                <p></p>
+                <h3>National Cheng Kung University (國立成功大學)</h3>
+                <p>The <b>14<sup>th</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input class='radio' id='trigger15' name='trigger' type='radio'>
+            <label for='trigger15'>
+                <span>NTHU<br>國立清華大學</span>
+            </label>
+            <span class='date'>2003</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 2003</h3>
+                <p></p>
+                <h3>National Tsing Hua University (國立清華大學)</h3>
+                <p>The <b>15<sup>th</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input class='radio' id='trigger16' name='trigger' type='radio'>
+            <label for='trigger16'>
+                <span>Sinica<br>中研院</span>
+            </label>
+            <span class='date'>2004</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 2004</h3>
+                <p></p>
+                <h3>Sinica (中央研究院)</h3>
+                <p>The <b>16<sup>th</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input class='radio' id='trigger17' name='trigger' type='radio'>
+            <label for='trigger17'>
+                <span>NCKU<br>國立成功大學</span>
+            </label>
+            <span class='date'>2005</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 2005</h3>
+                <p></p>
+                <h3>National Cheng Kung University (國立成功大學)</h3>
+                <p>The <b>17<sup>th</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input class='radio' id='trigger18' name='trigger' type='radio'>
+            <label for='trigger18'>
+                <span>NCTU<br>國立交通大學</span>
+            </label>
+            <span class='date'>2006</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 2006</h3>
+                <p></p>
+                <p>National Chiao Tung University (國立交通大學)</p>
+                <p>The <b>18<sup>th</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input class='radio' id='trigger19' name='trigger' type='radio'>
+            <label for='trigger19'>
+                <span>NTU<br>國立臺灣大學</span>
+            </label>
+            <span class='date'>2007</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 2007</h3>
+                <p></p>
+                <h3>National Taiwan University (國立臺灣大學)</h3>
+                <p>The <b>19<sup>th</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input class='radio' id='trigger20' name='trigger' type='radio'>
+            <label for='trigger20'>
+                <span>NTNU<br>國立臺灣師範大學</span>
+            </label>
+            <span class='date'>2008</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 2008</h3>
+                <p></p>
+                <h3>National Taiwan Normal University (國立臺灣師範大學)</h3>
+                <p>The <b>20<sup>th</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input class='radio' id='trigger21' name='trigger' type='radio'>
+            <label for='trigger21'>
+                <span>NCHU<br>國立中興大學</span>
+            </label>
+            <span class='date'>2009</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 2009</h3>
+                <p></p>
+                <h3>National Chung Hsing University (國立中興大學)</h3>
+                <p>The <b>21<sup>st</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input class='radio' id='trigger22' name='trigger' type='radio'>
+            <label for='trigger22'>
+                <span>NCNU<br>國立暨南國際大學</span>
+            </label>
+            <span class='date'>2010</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 2010</h3>
+                <p></p>
+                <h3>National Chi Nan University (國立暨南國際大學)</h3>
+                <p>The <b>22<sup>nd</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input class='radio' id='trigger23' name='trigger' type='radio'>
+            <label for='trigger23'>
+                <span>NTUT<br>國立臺北科技大學</span>
+            </label>
+            <span class='date'>2011</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 2011</h3>
+                <p></p>
+                <h3>National Taipei University of Technology (國立臺北科技大學)</h3>
+                <p>The <b>23<sup>rd</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input class='radio' id='trigger24' name='trigger' type='radio'>
+            <label for='trigger24'>
+                <span>YZU<br>元智大學</span>
+            </label>
+            <span class='date'>2012</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 2012</h3>
+                <p></p>
+                <p>Yuan Ze University (元智大學)</p>
+                <p>The <b>24<sup>th</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+    </ul>
+
+    <ul id='timeline3'>
+        <li class='entry'>
+            <input class='radio' id='trigger1' name='trigger' type='radio'>
+            <label for='trigger1'>
+                <span>Sinica<br>中研院</span>
+            </label>
+            <span class='date'>1989</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 1988</h3>
+                <p></p>
+                <h3>Sinica (中央研究院)</h3>
+                <p>The <b>1<sup>st</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input class='radio' id='trigger2' name='trigger' type='radio'>
+            <label for='trigger2'>
+                <span>Sinica<br>中研院</span>
+            </label>
+            <span class='date'>1989</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 1989</h3>
+                <p></p>
+                <h3>Sinica (中央研究院)</h3>
+                <p>The <b>2<sup>nd</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input class='radio' id='trigger3' name='trigger' type='radio'>
+            <label for='trigger3'>
+                <span>NTHU<br>國立清華大學</span>
+            </label>
+            <span class='date'>1990</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 1990</h3>
+                <p></p>
+                <h3>National Tsing Hua University (國立清華大學)</h3>
+                <p>The <b>3<sup>th</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input class='radio' id='trigger4' name='trigger' type='radio'>
+            <label for='trigger4'>
+                <span>NCTU<br>國立交通大學</span>
+            </label>
+            <span class='date'>1991</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 1991</h3>
+                <p></p>
+                <p>National Chiao Tung University (國立交通大學)</p>
+                <p>The <b>4<sup>th</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input class='radio' id='trigger5' name='trigger' type='radio'>
+            <label for='trigger5'>
+                <span>NTU<br>國立臺灣大學</span>
+            </label>
+            <span class='date'>1992</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 1992</h3>
+                <p></p>
+                <h3>National Taiwan University (國立臺灣大學)</h3>
+                <p>The <b>5<sup>th</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input class='radio' id='trigger6' name='trigger' type='radio'>
+            <label for='trigger6'>
+                <span>Sinica<br>中研院</span>
+            </label>
+            <span class='date'>1993</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 1993</h3>
+                <p></p>
+                <h3>Sinica (中央研究院)</h3>
+                <p>The <b>6<sup>th</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input class='radio' id='trigger7' name='trigger' type='radio'>
+            <label for='trigger7'>
+                <span>NTHU<br>國立清華大學</span>
+            </label>
+            <span class='date'>1994</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 1994</h3>
+                <p></p>
+                <h3>National Tsing Hua University (國立清華大學)</h3>
+                <p>The <b>7<sup>th</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input class='radio' id='trigger8' name='trigger' type='radio'>
+            <label for='trigger8'>
+                <span>YZU<br>元智大學</span>
+            </label>
+            <span class='date'>1995</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 1995</h3>
+                <p></p>
+                <p>Yuan Ze University (元智大學)</p>
+                <p>The <b>8<sup>th</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input class='radio' id='trigger9' name='trigger' type='radio'>
+            <label for='trigger17'>
+                <span>NCKU<br>國立成功大學</span>
+            </label>
+            <span class='date'>1996</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 1996</h3>
+                <p></p>
+                <h3>National Cheng Kung University (國立成功大學)</h3>
+                <p>The <b>9<sup>th</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input class='radio' id='trigger10' name='trigger' type='radio'>
+            <label for='trigger10'>
+                <span>Sinica<br>中研院</span>
+            </label>
+            <span class='date'>1997</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 1997</h3>
+                <p></p>
+                <h3>Sinica (中央研究院)</h3>
+                <p>The <b>10<sup>th</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input class='radio' id='trigger11' name='trigger' type='radio'>
+            <label for='trigger11'>
+                <span>ITRI<br>工業技術研究院</span>
+            </label>
+            <span class='date'>1998</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 1998</h3>
+                <p></p>
+                <p>Industrial Technology Research Institute (工業技術研究院)</p>
+                <p>The <b>11<sup>th</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        <li class='entry'>
+            <input class='radio' id='trigger12' name='trigger' type='radio'>
+            <label for='trigger12'>
+                <span>NCTU<br>國立交通大學</span>
+            </label>
+            <span class='date'>1999</span>
+            <span class='circle'></span>
+            <div class='content'>
+                <h3>ROCLING 1999</h3>
+                <p></p>
+                <p>National Chiao Tung University (國立交通大學)</p>
+                <p>The <b>12<sup>th</sup></b> conference on Computational Linguistics and Speech Processing</p>
+            </div>
+        </li>
+        
+    </ul>
+    
+    <br>
+    <p><!--
+        &copy; Copyright <script>document.write(new Date().getFullYear());</script> <a href="https://nlp.bigdata.scu.edu.tw"><strong>SCU NLP LAB</strong></a>, All Rights Reserved.
+-->
+    </p>
+</body>
+
+</html>
