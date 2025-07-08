@@ -11,7 +11,7 @@
             <h3>Submission Tracks</h3>
             <p>ROCLING 2025 offers two submission tracks to accommodate different publication needs:</p>
             <p>
-            <strong>Archival Track</strong>: Papers accepted in this track will be published in the ROCLING 2025 conference proceedings and included in the <a href="https://aclanthology.org/venues/rocling">ACL Anthology</a>. These submissions must present original, unpublished work. Papers in the archival track are eligible to compete for best paper awards.
+            <strong>Archival Track</strong>: Papers accepted in this track will be published in the ROCLING 2025 conference proceedings and included in the ACL Anthology. These submissions must present original, unpublished work. Papers in the archival track are eligible to compete for best paper awards.
             </p>
             <p>
             <strong>Non-Archival Track</strong>: This track provides an opportunity to present research without formal publication in the proceedings. We welcome submissions of papers currently under review at other venues (provided submitting to ROCLING does not violate the anonymity policies of those venues), as well as papers intended for future submission elsewhere. This allows authors to share their ongoing or completed work with the ROCLING community while preserving their ability to publish in other venues. Papers in this track will not be included in the conference proceedings or ACL Anthology and are not eligible for best paper awards.
@@ -26,7 +26,7 @@
             A number of papers will be selected and invited for extension into journal versions and publication in a special issue of the International Journal of Computational Linguistics and Chinese Language Processing (IJCLCLP).
             </p>
             <!--<h3>Page Limitation</h3>
-            <p>Papers can be written and presented in either Chinese or English. Papers should be made in PDF format and submitted online through the paper submission system. 
+            <p>Papers can be written and presented in either Chinese or English. Papers should be made in PDF format and submitted online through the paper submission system.
 	Submitted papers may consist of 4-8 pages of content, plus unlimited references. Upon acceptance, final versions will be given additional pages of content (up to 9 pages) so that reviewers’ comments can be taken into account.</p>
             <h3>Relevant topics</h3>
             -->
@@ -120,4 +120,4 @@
           </div>
         </div>
       </div>
-    
+
