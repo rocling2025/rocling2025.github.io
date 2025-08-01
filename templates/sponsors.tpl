@@ -1,6 +1,6 @@
   <div class="container">
     <div class="section-header">
-      <h2>Sponsors(TBA)</h2>
+      <h2>Sponsors</h2>
     </div>
     {{~it.sponsors :sponsor:index}}
       {{? index % 4 === 0 }}
