@@ -115,7 +115,7 @@
               </div>
             </div>
             <h3>Online submission system</h3>
-            <p>Paper submissions must use the official ROCLING 2025 style templates (Latex and Word) and <a href="files/rocling2025-templates.zip">download here</a>. (need to change to 2025). Submission is electronic, using the EasyChair conference management system. The submission site is available at <a href="https://easychair.org/conferences/?conf=rocling2025">https://easychair.org/conferences/?conf=rocling2025</a>.</p>
+            <p>Paper submissions must use the official ROCLING 2025 style templates (Latex and Word) and <a href="files/rocling2025-templates.zip">download here</a>. Submission is electronic, using the EasyChair conference management system. The submission site is available at <a href="https://easychair.org/conferences/?conf=rocling2025">https://easychair.org/conferences/?conf=rocling2025</a>.</p>
             <p>As the reviewing will be double-blind, papers must not include authors' names and affiliations. Furthermore, self-references that reveal the author's identity will be rejected. Papers may include links to resources (software and/or data) or artifacts described in the paper, but these should be anonymized as well.</p>
           </div>
         </div>
