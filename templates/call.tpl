@@ -17,7 +17,7 @@
             <strong>Non-Archival Track</strong>: This track provides an opportunity to present research without formal publication in the proceedings. We welcome submissions of papers currently under review at other venues (provided submitting to ROCLING does not violate the anonymity policies of those venues), as well as papers intended for future submission elsewhere. This allows authors to share their ongoing or completed work with the ROCLING community while preserving their ability to publish in other venues. Papers in this track will not be included in the conference proceedings or ACL Anthology and are not eligible for best paper awards.
             </p>
             <p>
-            <strong>Special sessions</strong>: ROCLING 2025 will feature two special sessions that focus on emerging and interdisciplinary topics in computational linguistics. Papers submitted to these sessions will follow the same submission process as the main conference but will be reviewed independently by specialized committees.
+            <strong>Special Sessions</strong>: ROCLING 2025 will feature two special sessions that focus on emerging and interdisciplinary topics in computational linguistics. Papers submitted to these sessions will follow the same submission process as the main conference but will be reviewed independently by specialized committees.
             </p>
             <p>
             Authors should clearly indicate their preferred track during submission. Both tracks will undergo the same rigorous peer review process to ensure quality presentations at the conference.
