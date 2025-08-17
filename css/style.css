@@ -977,20 +977,20 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*--------------------------------------------------------------
-# Schedule Section
+# Speakers Introduction Section
 --------------------------------------------------------------*/
 
-#schedule .keynote-item {
+#speakers .introduction-item {
   padding-top: 15px;
   padding-bottom: 15px;
   transition: background-color ease-in-out 0.3s;
 }
 
-#schedule .keynote-item:hover {
+#speakers .introduction-item:hover {
   background-color: #f0eef7;
 }
 
-#schedule .keynote-item .speaker {
+#speakers .introduction-item .speaker {
   width: 160px;
   height: 160px;
   overflow: hidden;
@@ -999,7 +999,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0 10px 10px 0;
 }
 
-#schedule .keynote-item .speaker img  {
+#speakers .introduction-item .speaker img  {
   height: 100%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -1007,16 +1007,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: all ease-in-out 0.3s;
 }
 
-#schedule .keynote-item h4 {
+#speakers .introduction-item h4 {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
 }
-#schedule .keynote-item h5 {
+#speakers .introduction-item h5 {
   margin-bottom: 5px;
 }
 
-#schedule .keynote-item h4 span {
+#speakers .introduction-item h4 span {
   font-style: italic;
   color: #19328e;
   font-weight: normal;
@@ -1024,10 +1024,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-left: 20px;
 }
 
-#schedule .keynote-item p {
+#speakers .introduction-item p {
   color: #464b4f;
   margin-bottom: 0;
 }
+
+/*--------------------------------------------------------------
+# Schedule Section
+--------------------------------------------------------------*/
 
 #schedule .nav-tabs {
   text-align: left;

@@ -6,28 +6,6 @@
         </div>
         <h3 class="sub-heading"></h3>
 
-<!-- Keynote Speakers Section -->
-{{~it.Keynotes :keynote:index}}
-<div class="row mb-4 keynote-item">
-  <div class="col-md-2">
-    {{?keynote.img}}
-    <div class="speaker">
-      <img src="{{=keynote.img}}" alt="{{=keynote.speaker.name}}">
-    </div>
-    {{?}}
-  </div>
-  <div class="col-md-10">
-    <h4>
-      {{=keynote.title}}
-      {{?keynote.location}} <span>{{=keynote.location}}</span>{{?}}
-    </h4>
-    {{?keynote.speaker.name}}
-      <h5>Speaker: <a href="{{=keynote.speaker.link}}">{{=keynote.speaker.name}}</a>{{?keynote.speaker.affiliation}}, {{=keynote.speaker.affiliation}}{{?}}</h5>
-    {{?}}
-    <p class="keynote-desc">{{=keynote.description}}</p>
-  </div>
-</div>
-{{~}}
 
 {{~it.days :day:index}}
 <!-- Schedule Day {{=index + 1}} -->

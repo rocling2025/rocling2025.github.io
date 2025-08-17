@@ -71,14 +71,24 @@
     ============================-->
     <section id="call" tpl="call"  class="section-with-bg fadeInUp"></section>
 
-
     <!--==========================
-      Schedule Section
+      Speakers Introduction Section
     ============================-->
-    <section id="schedule" tpl="schedule" class="wow fadeInUp">
+    <section id="speakers" tpl="speakers" class="wow fadeInUp">
 	    <data hidden>
 {
-  "Keynotes" :[
+  "Tutorial" :[
+    {
+      "title": "Tutorial",
+      "speaker": {
+        "name": "Prof. Ying-Hui Lai ",
+        "affiliation": "Department of Biomedical Engineering, National Yang Ming Chiao Tung University "
+      },
+      "img": "img/speakers/Ying-Hui_Lai.png",
+      "description": "Dr. Ying-Hui Lai is a Professor and Chair of Biomedical Engineering at National Yang Ming Chiao Tung University. His research interests include hearing and communication assistive devices, speech and bio-signal processing, optical microphones, and AI applications. Since earning his Ph.D. in 2013, he has authored over 100 papers and secured ten patents, leading to recent implementations on Bluetooth audio chips for wireless earbuds and hearing aids. A recipient of the 2023 FutureTech Award, the National Innovation Award, and a Gold Medal at the Global Student Innovation Challenge (gSIC), his work has been consistently recognized for its innovation. His research on optical microphones was also notably highlighted by the American Institute of Physics in AIP Scilight."
+    }
+  ],
+  "Keynote" :[
     {
       "title": "Keynote I",
       "speaker": {
@@ -99,6 +109,13 @@
     }
   ]
 }
+	    </data>
+    </section>
+    <!--==========================
+      Schedule Section
+    ============================-->
+    <section id="schedule" tpl="schedule" class="wow fadeInUp">
+	    <data hidden>
 <!-- {
   "days": [
     {
