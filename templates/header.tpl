@@ -10,7 +10,7 @@
           <li class="menu-active"><a href="#intro">Home</a></li>
           <!-- <li><a href="#photo">Photo</a></li> -->
           <li><a href="#call">Call for Papers</a></li>
-          <li><a href="#schedule">Program</a></li>
+          <li><a href="#speakers">Programs</a></li>
           <li><a href="https://tinyurl.com/rocling2025">Proceedings</a></li>
           <li><a href="#buy-registrations">Registration</a></li>
           <li><a href="#organization">Organization</a></li>
