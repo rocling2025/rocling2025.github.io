@@ -13,7 +13,7 @@
 				<div class="row">
                   <div class="col-6"><i class="fa fa-check"></i> Paper Submission Due</div>
                   <!--<div class="col-6 date"><del>August 31, 2025</del> September 7, 2025 (Extended)</div>-->
-                  <div class="col-6 date">September 12, 2025</div>
+                  <div class="col-6 date"><del> September 12, 2025 </del><br>(Extended) September 21, 2025</div>
                 </div>
                 <div class="row">
                   <div class="col-6"><i class="fa fa-check"></i> Notification of Acceptance</div>
