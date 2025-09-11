@@ -1,12 +1,5 @@
       <div class="container">
         <div class="section-header">
-          <h2>Registrations (TBA)</h2>
-          <p class="text-muted">Time Zone: UTC/GMT +08:00 (Asia/Taipei)</p>
-        </div>
-      </div>
-      
-      <!--<div class="container">
-        <div class="section-header">
           <h2>Registrations</h2>
           <p class="text-muted">Time Zone: UTC/GMT +08:00 (Asia/Taipei)</p>
         </div>
@@ -15,7 +8,7 @@
             <div class="card mb-5 mb-lg-3">
               <div class="card-body">
                 <h5 class="card-title text-center">Early <br>Registrations</h5>
-                <p class="text-highligh text-center">Before October 11, 2025</p>
+                <p class="text-highligh text-center">Before October 17, 2025</p>
                 <hr>
                 <h5 class="text-center">Regular</h5>
                 <ul class="fa-ul">
@@ -39,7 +32,7 @@
             <div class="card mb-5 mb-lg-3">
               <div class="card-body">
                 <h5 class="card-title text-center">Late <br>Registrations</h5>
-                <p class="text-center"> October 12 - October 27, 2025</p>
+                <p class="text-center"> <span class="text-highligh">October 18 - November 12, 2025</span></p>
                 <hr>
                 <h5 class="text-center">Regular</h5>
                 <ul class="fa-ul">
@@ -63,7 +56,7 @@
             <div class="card mb-5 mb-lg-3">
               <div class="card-body">
                 <h5 class="card-title text-center">On-Site <br>Registrations</h5>
-                <p class="text-center">November 4 - 5, 2025</p>
+                <p class="text-center"><span class="text-highligh">November 20 - 22, 2025</span></p>
                 <hr>
                 <h5 class="text-center">Regular</h5>
                 <ul class="fa-ul">
@@ -121,7 +114,7 @@
                   </li>
                   <li>
                     <span class="fa-li"><i class="fa fa-check"></i></span>
-                    贊助單位敬請於<span class="text-highligh">10月27日</span>前完成報名手續。
+                    贊助單位敬請於<span class="text-highligh">11月12日</span>前完成報名手續。
                   </li>
                   <li>
                     <span class="fa-li"><i class="fa fa-check"></i></span>
@@ -153,7 +146,7 @@
                   </li>
                   <li>
                     <span class="fa-li"><i class="fa fa-check"></i></span>
-                    Sponsor should be registed before <span class="text-highligh">October 27</span>.
+                    Sponsor should be registed before <span class="text-highligh">November 12</span>.
                   </li>
                 </ul>
                 <hr>
@@ -161,15 +154,15 @@
                 <ul class="fa-ul">
                   <li>
                     <span class="fa-li"><i class="fa fa-check"></i></span>
-                    Early Registration: <span class="text-highligh">10/24</span> 以前，報名費應於 <span class="text-highligh">10/30</span> 前繳交。
+                    Early Registration: <span class="text-highligh">10/17</span> 以前，報名費應於 <span class="text-highligh">10/24</span> 前繳交。
                   </li>
                   <li>
                     <span class="fa-li"><i class="fa fa-check"></i></span>
-                    Late Registration: <span class="text-highligh">11/14</span> 至 <span class="text-highligh">11/21</span> ，報名費應於 10/28  前繳交，線上刷卡繳費者需於 <span class="text-highligh">10/31</span> 前完成繳費。
+                    Late Registration: <span class="text-highligh">10/18</span> 至 <span class="text-highligh">11/12</span> ，報名費應於 <span class="text-highligh">11/19</span>  前繳交，線上刷卡繳費者需於 <span class="text-highligh">11/19</span> 前完成繳費。
                   </li>
                   <li>
                     <span class="fa-li"><i class="fa fa-check"></i></span>
-                    On-Site Registration: 11/14  線上報名截止，擬參加者，請至大會現場報名。
+                    On-Site Registration: <span class="text-highligh">11/12</span>  線上報名截止，擬參加者，請至大會現場報名。
                   </li>
                 </ul>
                 <hr>
@@ -177,16 +170,16 @@
                 <ul class="fa-ul">
                   <li>
                     <span class="fa-li"><i class="fa fa-check"></i></span>
-                    Early Registration due by <span class="text-highligh">October 11</span>. Payment must be received before <span class="text-highligh">October 17</span>.
+                    Early Registration due by <span class="text-highligh">October 17</span>. Payment must be received before <span class="text-highligh">October 24</span>.
                   </li>
                   <li>
                     <span class="fa-li"><i class="fa fa-check"></i></span>
-                    Registration between <span class="text-highligh">October 12</span> and <span class="text-highligh">October 27</span>. 
-					Payment must be received before <span class="text-highligh">October 31</span>.
+                    Registration between <span class="text-highligh">October 18</span> and <span class="text-highligh">November 12</span>. 
+					Payment must be received before <span class="text-highligh">November 19</span>.
                   </li>
                   <li>
                     <span class="fa-li"><i class="fa fa-check"></i></span>
-                    The registration site will be closed on October 27. After that, please register on-site.
+                    The registration site will be closed on <span class="text-highligh">November 12</span>. After that, please register on-site.
                   </li>
                 </ul>
                 <hr>
@@ -227,5 +220,5 @@
             </div>
           </div>
         </div>
-      </div>-->
+      </div>
     
