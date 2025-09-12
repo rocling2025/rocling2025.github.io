@@ -25,11 +25,11 @@
                 </div>
                <div class="row">
                   <div class="col-6 "><i class="fa fa-check"></i> Early Registration Ends</div>
-                  <div class="col-6 date">October 24, 2025</div>
+                  <div class="col-6 date">October 17, 2025</div>
                 </div>
                 <div class="row">
                   <div class="col-6"><i class="fa fa-check"></i> Late Registration Ends</div>
-                  <div class="col-6 date">November 14, 2025</div>
+                  <div class="col-6 date">November 12, 2025</div>
                 </div>
                 <div class="row">
                   <div class="col-6"><i class="fa fa-check"></i> On-Site Registration</div>

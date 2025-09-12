@@ -89,7 +89,7 @@
                   </li>
                   <li>
                     <span class="fa-li"><i class="fa fa-check"></i></span>
-                    每篇會議論文(包含shared tasks)的發表至少要有一位作者在早鳥註冊截止前繳交<span class="text-highligh">一般報名費</span>
+                    每篇會議論文(包含special sessions)的發表至少要有一位作者在早鳥註冊截止前繳交<span class="text-highligh">一般報名費</span>
                     (regular fee)。
                   </li>
                   <li>
@@ -126,27 +126,27 @@
                 <ul class="fa-ul">
                   <li>
                     <span class="fa-li"><i class="fa fa-check"></i></span>
-                    A regular fee must be paid by the general participants (not a student).  Students (general participants) can choose to pay the student fee.
+                    General participants (non-students) are required to pay the regular registration fee. Students are eligible to register at the student rate.
                   </li>
                   <li>
                     <span class="fa-li"><i class="fa fa-check"></i></span>
-                    Before early registration due, each publication paper (including shared tasks) must have at least one author pay a <span class="text-highligh">regular fee</span>.
+                    Prior to the early registration deadline, each accepted paper (including special sessions) must be accompanied by at least <span class="text-highligh">one regular registration</span>.
                   </li>
                   <li>
                     <span class="fa-li"><i class="fa fa-check"></i></span>
-                    Registration fee includes lunches, coffee breaks, and banquet. Registration fees are non-refundable.
+                    The registration fee covers lunches, coffee breaks, and the conference banquet. Please note that all registration fees are non-refundable.
                   </li>
                   <li>
                     <span class="fa-li"><i class="fa fa-check"></i></span>
-                    International registrants have to pay by credit card only (Visa or MasterCard). Receipt will be provided on-site.
+                    International participants must remit payment by credit card (Visa or MasterCard only). Official receipts will be issued on-site.
                   </li>
                   <li>
                     <span class="fa-li"><i class="fa fa-check"></i></span>
-                    A copy of a valid student ID must be uploaded into the system when registering as a student.
+                    A copy of a valid student identification card must be uploaded during the registration process in order to qualify for the student rate.
                   </li>
                   <li>
                     <span class="fa-li"><i class="fa fa-check"></i></span>
-                    Sponsor should be registed before <span class="text-highligh">November 12</span>.
+                    Sponsorship registrations must be completed no later than <span class="text-highligh">November 12, 2025</span>.
                   </li>
                 </ul>
                 <hr>
@@ -170,16 +170,15 @@
                 <ul class="fa-ul">
                   <li>
                     <span class="fa-li"><i class="fa fa-check"></i></span>
-                    Early Registration due by <span class="text-highligh">October 17</span>. Payment must be received before <span class="text-highligh">October 24</span>.
+                    Early Registration: Register by <span class="text-highligh">October 17</span>. Payment must be completed by <span class="text-highligh">October 24</span>.
                   </li>
                   <li>
                     <span class="fa-li"><i class="fa fa-check"></i></span>
-                    Registration between <span class="text-highligh">October 18</span> and <span class="text-highligh">November 12</span>. 
-					Payment must be received before <span class="text-highligh">November 19</span>.
+                    Late Registration: Register between <span class="text-highligh">October 18</span> and <span class="text-highligh">November 12</span>. Payment must be completed by <span class="text-highligh">November 19</span>. For online credit card payment, the transaction must also be completed by <span class="text-highligh">November 19</span>.
                   </li>
                   <li>
                     <span class="fa-li"><i class="fa fa-check"></i></span>
-                    The registration site will be closed on <span class="text-highligh">November 12</span>. After that, please register on-site.
+                    On-Site Registration: Online registration closes on <span class="text-highligh">November 12</span>. After that date, please register on-site at the conference venue.
                   </li>
                 </ul>
                 <hr>
